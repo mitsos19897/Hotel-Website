@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Booking</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="booking.css">
+      <link href="Content/bootstrap.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    </head>
+    <body>
+        <!-- navigation menu -->
+        <nav>
+        <ul> 
+  <li><a class="active" href="#home"><img src="logo2.png"></a></li>
+  <li class="dropdown"> 
+      <a href="javascript:void(0)" class="dropbtn">Stay</a>
+    <div class="dropdown-content">
+      <a href="#">Standard Rooms</a>
+      <a href="#">Superior Rooms</a>
+      <a href="#">Suites</a>
+    </div>
+  <li title="Choose your currency"><a href="#Currency"><i class="fa fa-euro"></i></a></li> 
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Activities</a>
+    <div class="dropdown-content">
+      <a href="#">Restaurant</a>
+      <a href="#">Spa and Swimming pool</a>
+      <a href="#">Arts Program</a>
+      <a href="#">Golden Massage</a>
+    </div>
+    <li title="watch our nice photos"><a href="#Photos">Photos</a></li>
+     <li class="dropdown"> 
+      <a href="javascript:void(0)" class="dropbtn">Meetings</a>
+    <div class="dropdown-content">
+      <a href="#">Meeting Packages</a>
+      <a href="#">Conferences</a>
+      <a href="#">Branding Services</a>
+    </div>
+    <li class="dropdown"> 
+      <a href="javascript:void(0)" class="dropbtn">Feedback</a>
+    <div class="dropdown-content">
+      <a href="#">Give us Feedback</a>
+      <a href="#">Customer service help</a>
+      <a href="#">Partner Dashboard</a>
+    </div>
+    
+  <li style="float:right"><a href="#about">Search...<i class="fa fa-search"></i></a></li>
+</ul>
+        </nav>
+
+<!-- Slide Show -->
+<section>
+  <div class="first-slideshow">
+  <img class="mySlides" src="hotel1.jpg"
+  style="width:100%" alt="Hotel front view">
+  <img class="mySlides" src="hotel2.jpg"
+  style="width:100%" alt="superior bedroom">
+  <img class="mySlides" src="swimming_pool.jpg"
+  style="width:100%" alt="outdoor pool">
+  </div>
+</section>
+<script>
+// Automatic Slideshow - change image every 5 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
+}
+</script>
+ <!-- eikones me activities-->
+ <div class="flex-container">
+  <div class="w3-container">
+    <h3>Explore Choice hotels</h3>
+    <p>Stay with us and see luxury at its finest.</p>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+     <a class="hovertext" href="#Activities" title="swimming pool"> <img class="activities" src="swimming_pool_interior.jpg" alt="hotel Outside" style="width:30%"></a>
+      <a class="hovertext" href="#Activities" title="Rooftop Bar"><img class="activities" src="rooftop_bar.jpg" alt="Superior Room" style="width:30%"> </a>
+     <a class="hovertext" href="#Activities" title="Gym and Pilates"> <img class="activities" src="gym_and_pilates.jpg" alt="Private Pool" style="width:30%"> </a>
+      
+
+      </div>
+    </div>
+   <!-- eikones me descriptions-->
+  </div>
+  <article class="article">
+  <h1>Enjoy your stay in luxurious Choice hotel</h1>
+  <p>Our 641 guest rooms and 34 suites present the apex of luxurious Miami accommodations. Our Presidential Suites were designed by tennis superstar Venus William's V*Starr Designs, with contemporary chic designs incorporating modern amenities, including a media room. Onsite restaurants include the dining destination Toro Toro, created by famed chef Richard Sandoval, and the private Chef's Table, Table 40. Our rooftop pool presents an enticing view of the surrounding Biscayne Bay, with Bluewater serving cocktails and light fare. Rejuvenate your body at mySpa, our own locale for spa treatments.</p>
+<p>
+Our luxury hotel in Miami is also the premier location for conferences, conventions, and events. 101,000 square feet of meeting space is available, spread across 33 meeting rooms. From catering to branding services, our professional event staff helps you craft an extraordinary event. The Grand Ballroom, which can host up to 800 guests, is decorated with ornate chandeliers. The Chopin Ballroom and Bayfront Room are additional elegant venues for weddings, meetings, and celebrations. With a location in Downtown Miami, your guests will stay convenient to the city's lively attractions.London is the capital city of England. It is the most populous city in the United Kingdom,
+  with a metropolitan area of over 13 million inhabitants.</p>
+  <p><strong></strong></p>
+ 
+  
+</article>
+<section class="hello">
+  <table class="hello"><article>
+<tr>
+    <td><a href="#Golden Massage"><img src="golden_spa.jpg" alt="Massage"></a></td> 
+    <td><a href="#Meetings"><img src="meetings.jpg" alt="Conference"></a></td>
+     </tr>
+    <tr>
+      <td><p>
+        Improve your well-being with Golden Massage.
+        </br> <a href="#Golden Massage"><button class="button">View Rates</button></a></p></td>
+      <td><p>
+          Meetings and Conferences
+        </br><a href="#Meetings"><button class="button">Read more</button></a></p></td>   
+    </tr>
+</table>
+  </article>
+  </br>
+  </br>
+  <hr>
+   <div>
+     <!-- social media icons-->
+     <ul>
+       <li title="Find us on Facebook"><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li> 
+       <li title="Find us on Twitter"><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li> 
+       <li title="Find us on Instagram"><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li> 
+       <li title="Find us on Google Plus"><a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></li> 
+       <li title="Find us on Trip Advisor"><a href="https://www.tripadvisor.com"><i class="fa fa-tripadvisor"></i></a></li> 
+     </ul>
+     </div>
+     <!-- footer-->
+<footer>
+   Choice Hotel
+   </br>
+100 Chopin Plaza, FL Miami 33131
+</br>
+Tel: +1(305) 256-1000 / Fax: +1(305) 585-4821 
+</br>
+<p style="font-size:14px;">Copyright © Xirafiadis_dimitris.com</p></footer>
+</footer>
+
+    </body>
+</html>
